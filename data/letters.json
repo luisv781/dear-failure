@@ -4,55 +4,125 @@
     "content": "Dear failed audition, thank you for teaching me that rejection isn't the end of my story. You showed me that every 'no' brings me closer to the right 'yes'. I'm stronger now because of you.",
     "nickname": "Hopeful Actor",
     "category": "Career",
-    "createdAt": "2024-01-15T10:30:00.000Z"
+    "createdAt": "2025-03-15T10:30:00.000Z"
   },
   {
     "id": "2", 
     "content": "Dear broken heart, you shattered me into a thousand pieces, but I've learned to put myself back together with gold. You taught me that love is worth the risk, even when it hurts.",
     "nickname": "Healing Soul",
     "category": "Relationships",
-    "createdAt": "2024-01-14T15:45:00.000Z"
+    "createdAt": "2025-07-22T15:45:00.000Z"
   },
   {
     "id": "3",
     "content": "Dear failed exam, you made me question everything I thought I knew about myself. But you also taught me that my worth isn't measured by grades. You pushed me to find my true passion.",
     "nickname": "Student",
     "category": "School",
-    "createdAt": "2024-01-13T09:20:00.000Z"
+    "createdAt": "2025-05-08T09:20:00.000Z"
   },
   {
     "id": "4",
     "content": "Dear missed opportunity, I thought you were my only chance at happiness. But you taught me that doors close so better ones can open. Thank you for redirecting my path.",
     "nickname": "Grateful Wanderer",
     "category": "Personal Growth",
-    "createdAt": "2024-01-12T14:15:00.000Z"
+    "createdAt": "2025-09-12T14:15:00.000Z"
   },
   {
     "id": "5",
     "content": "Dear startup that didn't make it, you consumed three years of my life and left me with nothing but lessons. But those lessons were priceless. You taught me resilience, creativity, and the courage to try again.",
     "nickname": "Entrepreneur",
     "category": "Career",
-    "createdAt": "2024-01-11T11:30:00.000Z"
+    "createdAt": "2025-02-28T11:30:00.000Z"
   },
   {
     "id": "6",
     "content": "Dear friendship that ended, you taught me that sometimes love means letting go. I'm grateful for the memories and the wisdom you left behind. You shaped who I am today.",
     "nickname": "Forever Friend",
     "category": "Relationships",
-    "createdAt": "2024-01-10T16:20:00.000Z"
+    "createdAt": "2025-06-14T16:20:00.000Z"
   },
   {
     "id": "7",
     "content": "Dear fear of public speaking, you held me back for so long. But when I finally faced you, you became my greatest teacher. You showed me that courage isn't the absence of fear, but action despite it.",
     "nickname": "Speaker",
     "category": "Personal Growth",
-    "createdAt": "2024-01-09T13:45:00.000Z"
+    "createdAt": "2025-04-03T13:45:00.000Z"
   },
   {
     "id": "8",
     "content": "Dear college rejection letter, you felt like the end of my dreams. But you led me to a different path that was perfect for me. Thank you for redirecting my journey to where I truly belonged.",
     "nickname": "College Student",
     "category": "School",
-    "createdAt": "2024-01-08T08:15:00.000Z"
+    "createdAt": "2025-08-19T08:15:00.000Z"
+  },
+  {
+    "id": "9",
+    "content": "Dear failed business partnership, you taught me that trust is earned, not given. Through your betrayal, I learned to stand on my own two feet and build something truly mine. You made me stronger than I ever imagined.",
+    "nickname": "Independent Builder",
+    "category": "Career",
+    "createdAt": "2025-01-25T12:30:00.000Z"
+  },
+  {
+    "id": "10",
+    "content": "Dear social anxiety, you made me feel invisible in crowded rooms. But you also taught me the beauty of deep, meaningful connections. You showed me that quality matters more than quantity in relationships.",
+    "nickname": "Quiet Observer",
+    "category": "Personal Growth",
+    "createdAt": "2025-10-02T09:45:00.000Z"
+  },
+  {
+    "id": "11",
+    "content": "Dear failed marriage proposal, you shattered my heart into a million pieces. But you taught me that love isn't about possession—it's about freedom. You led me to someone who chooses me every day.",
+    "nickname": "Hopeful Romantic",
+    "category": "Relationships",
+    "createdAt": "2025-03-30T18:20:00.000Z"
+  },
+  {
+    "id": "12",
+    "content": "Dear dropped class, you made me feel like a quitter. But you taught me that sometimes walking away is the bravest choice. You freed me to pursue what truly ignited my soul.",
+    "nickname": "Course Corrector",
+    "category": "School",
+    "createdAt": "2025-06-02T14:10:00.000Z"
+  },
+  {
+    "id": "13",
+    "content": "Dear creative block, you made me question if I'd ever create again. But you taught me that silence is part of the creative process. You showed me that sometimes we need to empty ourselves to be filled with new inspiration.",
+    "nickname": "Artist in Bloom",
+    "category": "Personal Growth",
+    "createdAt": "2025-05-18T16:55:00.000Z"
+  },
+  {
+    "id": "14",
+    "content": "Dear job interview that went wrong, you made me doubt my abilities. But you taught me that rejection is redirection. You led me to a role where I'm not just employed—I'm valued and growing.",
+    "nickname": "Career Navigator",
+    "category": "Career",
+    "createdAt": "2025-09-05T11:15:00.000Z"
+  },
+  {
+    "id": "15",
+    "content": "Dear family estrangement, you broke my heart in ways I didn't know possible. But you taught me that family isn't just blood—it's the people who choose to love you unconditionally. You led me to my chosen family.",
+    "nickname": "Chosen Family",
+    "category": "Relationships",
+    "createdAt": "2025-07-11T20:30:00.000Z"
+  },
+  {
+    "id": "16",
+    "content": "Dear failed research project, you consumed months of my life with no results. But you taught me that failure is data, not defeat. You showed me that every 'failed' experiment teaches us something valuable.",
+    "nickname": "Research Scholar",
+    "category": "School",
+    "createdAt": "2025-04-26T13:40:00.000Z"
+  },
+  {
+    "id": "17",
+    "content": "Dear imposter syndrome, you made me feel like a fraud in my own life. But you taught me that feeling inadequate means I'm growing beyond my comfort zone. You showed me that growth happens in the discomfort.",
+    "nickname": "Growing Professional",
+    "category": "Personal Growth",
+    "createdAt": "2025-08-13T10:25:00.000Z"
+  },
+  {
+    "id": "18",
+    "content": "Dear missed promotion, you made me question my worth and abilities. But you taught me that my value isn't determined by titles or recognition. You led me to create my own path where I define my success.",
+    "nickname": "Path Creator",
+    "category": "Career",
+    "createdAt": "2025-02-14T15:50:00.000Z"
   }
 ]
