@@ -62,7 +62,12 @@ export default function WritePage() {
           Back to Home
         </Link>
         <h1 className="text-2xl serif-title text-primary font-semibold">Dear Failure</h1>
-        <div className="w-24"></div> {/* Spacer for centering */}
+        <Link 
+          href="/letters" 
+          className="text-md text-muted-foreground hover:text-primary transition-colors"
+        >
+          Read Letters
+        </Link>
       </nav>
 
       <main className="max-w-3xl mx-auto px-6 py-8">

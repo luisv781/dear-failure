@@ -111,7 +111,7 @@ function LettersContent() {
       <nav className="flex justify-between items-center p-6 max-w-6xl mx-auto">
         <Link 
           href="/"
-          className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+          className="text-md flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Home
@@ -119,7 +119,7 @@ function LettersContent() {
         <h1 className="text-2xl serif-title text-primary font-semibold">Dear Failure</h1>
         <Link 
           href="/write"
-          className="text-sm text-muted-foreground hover:text-primary transition-colors"
+          className="text-md text-muted-foreground hover:text-primary transition-colors"
         >
           Write Letter
         </Link>
@@ -128,10 +128,10 @@ function LettersContent() {
       <main className="max-w-6xl mx-auto px-6 py-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl serif-title text-primary mb-4">
+          <h1 className="text-7xl serif-title text-primary mb-4">
             Letters Archive
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Read heartfelt letters from people who have found strength in their failures.
           </p>
         </div>

@@ -8,17 +8,17 @@ export default function Home() {
     <div className="min-h-screen bg-background stationery-paper">
       {/* Navigation */}
       <nav className="flex justify-between items-center p-6 max-w-6xl mx-auto">
-        <h1 className="text-2xl serif-title text-primary font-semibold">Dear Failure</h1>
+        <h1 className="text-3xl serif-title text-primary font-semibold">Dear Failure</h1>
         <div className="flex gap-4">
           <Link 
             href="/letters" 
-            className="text-sm text-muted-foreground hover:text-primary transition-colors"
+            className="text-md text-muted-foreground hover:text-primary transition-colors"
           >
             Read Letters
           </Link>
           <Link 
             href="/write" 
-            className="text-sm text-muted-foreground hover:text-primary transition-colors"
+            className="text-md text-muted-foreground hover:text-primary transition-colors"
           >
             Write Letter
           </Link>
@@ -28,10 +28,10 @@ export default function Home() {
       {/* Hero Section */}
       <main className="max-w-4xl mx-auto px-6 py-16">
         <div className="text-center mb-16">
-          <h1 className="text-6xl md:text-7xl serif-title text-primary mb-6 leading-tight">
+          <h1 className="text-6xl md:text-8xl serif-title text-primary mb-6 leading-tight">
             Dear Failure
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             Write a letter to the moments that made you grow. 
             Share your journey of resilience, learning, and transformation.
           </p>
@@ -57,7 +57,7 @@ export default function Home() {
 
         {/* Featured Quote */}
         <div className="text-center mb-16">
-          <blockquote className="text-2xl serif-title text-primary/80 italic max-w-3xl mx-auto">
+          <blockquote className="text-3xl serif-title text-primary/80 italic max-w-3xl mx-auto">
             "Every failure is a stepping stone to success. 
             Every setback is a setup for a comeback."
           </blockquote>
@@ -66,7 +66,7 @@ export default function Home() {
 
         {/* Preview Section */}
         <section className="mb-16">
-          <h2 className="text-3xl serif-title text-primary mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl serif-title text-primary mb-8 text-center">
             Recent Letters
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
