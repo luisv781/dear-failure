@@ -30,7 +30,7 @@ A beautiful, minimalist website where people can anonymously write heartfelt let
 
 1. **Clone and install dependencies:**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/luisv781/hackaithon-failing-upward.git
    cd hackaithon-failing-upward
    npm install
    ```
@@ -42,27 +42,6 @@ A beautiful, minimalist website where people can anonymously write heartfelt let
 
 3. **Open your browser:**
    Navigate to http://localhost:3000
-
-### Deploy to GitHub Pages
-
-1. **Fork this repository** to your GitHub account
-
-2. **Enable GitHub Pages:**
-   - Go to your repository settings
-   - Scroll to "Pages" section
-   - Set source to "GitHub Actions"
-
-3. **Push to main branch:**
-   ```bash
-   git add .
-   git commit -m "Deploy to GitHub Pages"
-   git push origin main
-   ```
-
-4. **Your site will be available at:**
-   `https://yourusername.github.io/hackaithon-failing-upward`
-
-The GitHub Actions workflow will automatically build and deploy your site whenever you push to the main branch.
 
 ## Project Structure
 

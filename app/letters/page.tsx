@@ -64,8 +64,10 @@ function LettersContent() {
 
   const handleShuffle = () => {
     setIsShuffling(true)
-    loadLetters()
-    setIsShuffling(false)
+    setTimeout(() => {
+      loadLetters()
+      setIsShuffling(false)
+    }, 100)
   }
 
   const formatDate = (dateString: string) => {
