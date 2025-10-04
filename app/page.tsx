@@ -116,7 +116,7 @@ export default function Home() {
                 <div className='max-w-6xl mx-auto px-6 text-center'>
                     <p className='text-sm text-muted-foreground'>
                         A safe space to honor your journey through failure and
-                        growth.
+                        growth. Made by Luis V.
                     </p>
                 </div>
             </footer>
