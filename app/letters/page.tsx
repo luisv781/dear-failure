@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowLeft, Shuffle, Filter, Heart, Calendar } from 'lucide-react'
 import { getAllLetters, getLettersByCategory, getShuffledLetters } from '@/lib/letters'
+import { toast } from 'sonner'
 
 interface Letter {
   id: string
@@ -33,12 +34,7 @@ function LettersContent() {
   useEffect(() => {
     loadLetters()
     
-    // Show success message if redirected from write page
-    if (searchParams.get('submitted') === 'true') {
-      setTimeout(() => {
-        // You could add a toast notification here
-      }, 1000)
-    }
+    // Success message is already shown on the write page
   }, [selectedCategory])
 
   const loadLetters = () => {

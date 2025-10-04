@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Handlee } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${cormorant.variable} ${handlee.variable} antialiased`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );

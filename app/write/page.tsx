@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { ArrowLeft, Send, PenTool } from 'lucide-react'
 import { addLetter } from '@/lib/letters'
+import { toast } from 'sonner'
 
 const categories = [
   'School',
@@ -25,7 +26,7 @@ export default function WritePage() {
     e.preventDefault()
     
     if (!content.trim()) {
-      alert('Please write your letter before submitting.')
+      toast.error('Please write your letter before submitting.')
       return
     }
 
@@ -39,11 +40,11 @@ export default function WritePage() {
       })
 
       // Show success message
-      alert('Your letter has been submitted! Thank you for sharing your story.')
+      toast.success('Your letter has been submitted! Thank you for sharing your story.')
       router.push('/letters?submitted=true')
     } catch (error) {
       console.error('Error submitting letter:', error)
-      alert('Failed to submit your letter. Please try again.')
+      toast.error('Failed to submit your letter. Please try again.')
     } finally {
       setIsSubmitting(false)
     }
