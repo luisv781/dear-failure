@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/hackaithon-failing-upward',
+  basePath: '/dear-failure',
   images: {
     unoptimized: true
   }

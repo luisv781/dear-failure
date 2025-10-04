@@ -30,8 +30,8 @@ A beautiful, minimalist website where people can anonymously write heartfelt let
 
 1. **Clone and install dependencies:**
    ```bash
-   git clone https://github.com/luisv781/hackaithon-failing-upward.git
-   cd hackaithon-failing-upward
+   git clone https://github.com/luisv781/dear-failure.git
+   cd dear-failure
    npm install
    ```
 
@@ -46,7 +46,7 @@ A beautiful, minimalist website where people can anonymously write heartfelt let
 ## Project Structure
 
 ```
-hackaithon-failing-upward/
+dear-failure/
 ├── app/
 │   ├── letters/page.tsx        # Letters archive page
 │   ├── write/page.tsx          # Write letter page
