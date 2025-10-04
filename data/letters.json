@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "content": "Dear failed audition, thank you for teaching me that rejection isn't the end of my story. You showed me that every 'no' brings me closer to the right 'yes'. I'm stronger now because of you.",
+    "nickname": "Hopeful Actor",
+    "category": "Career",
+    "createdAt": "2024-01-15T10:30:00.000Z"
+  },
+  {
+    "id": "2", 
+    "content": "Dear broken heart, you shattered me into a thousand pieces, but I've learned to put myself back together with gold. You taught me that love is worth the risk, even when it hurts.",
+    "nickname": "Healing Soul",
+    "category": "Relationships",
+    "createdAt": "2024-01-14T15:45:00.000Z"
+  },
+  {
+    "id": "3",
+    "content": "Dear failed exam, you made me question everything I thought I knew about myself. But you also taught me that my worth isn't measured by grades. You pushed me to find my true passion.",
+    "nickname": "Student",
+    "category": "School",
+    "createdAt": "2024-01-13T09:20:00.000Z"
+  },
+  {
+    "id": "4",
+    "content": "Dear missed opportunity, I thought you were my only chance at happiness. But you taught me that doors close so better ones can open. Thank you for redirecting my path.",
+    "nickname": "Grateful Wanderer",
+    "category": "Personal Growth",
+    "createdAt": "2024-01-12T14:15:00.000Z"
+  },
+  {
+    "id": "5",
+    "content": "Dear startup that didn't make it, you consumed three years of my life and left me with nothing but lessons. But those lessons were priceless. You taught me resilience, creativity, and the courage to try again.",
+    "nickname": "Entrepreneur",
+    "category": "Career",
+    "createdAt": "2024-01-11T11:30:00.000Z"
+  },
+  {
+    "id": "6",
+    "content": "Dear friendship that ended, you taught me that sometimes love means letting go. I'm grateful for the memories and the wisdom you left behind. You shaped who I am today.",
+    "nickname": "Forever Friend",
+    "category": "Relationships",
+    "createdAt": "2024-01-10T16:20:00.000Z"
+  },
+  {
+    "id": "7",
+    "content": "Dear fear of public speaking, you held me back for so long. But when I finally faced you, you became my greatest teacher. You showed me that courage isn't the absence of fear, but action despite it.",
+    "nickname": "Speaker",
+    "category": "Personal Growth",
+    "createdAt": "2024-01-09T13:45:00.000Z"
+  },
+  {
+    "id": "8",
+    "content": "Dear college rejection letter, you felt like the end of my dreams. But you led me to a different path that was perfect for me. Thank you for redirecting my journey to where I truly belonged.",
+    "nickname": "College Student",
+    "category": "School",
+    "createdAt": "2024-01-08T08:15:00.000Z"
+  }
+]

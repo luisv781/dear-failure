@@ -1,102 +1,109 @@
-import Image from "next/image";
+import Link from "next/link";
+import { PenTool, Heart, BookOpen } from "lucide-react";
+import { getRecentLetters } from "@/lib/letters";
 
 export default function Home() {
+  const recentLetters = getRecentLetters(3);
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/hackaithon-failing-upward/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="min-h-screen bg-background stationery-paper">
+      {/* Navigation */}
+      <nav className="flex justify-between items-center p-6 max-w-6xl mx-auto">
+        <h1 className="text-2xl serif-title text-primary font-semibold">Dear Failure</h1>
+        <div className="flex gap-4">
+          <Link 
+            href="/letters" 
+            className="text-sm text-muted-foreground hover:text-primary transition-colors"
           >
-            <Image
-              className="dark:invert"
-              src="/hackaithon-failing-upward/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Read Letters
+          </Link>
+          <Link 
+            href="/write" 
+            className="text-sm text-muted-foreground hover:text-primary transition-colors"
           >
-            Read our docs
-          </a>
+            Write Letter
+          </Link>
         </div>
+      </nav>
+
+      {/* Hero Section */}
+      <main className="max-w-4xl mx-auto px-6 py-16">
+        <div className="text-center mb-16">
+          <h1 className="text-6xl md:text-7xl serif-title text-primary mb-6 leading-tight">
+            Dear Failure
+          </h1>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+            Write a letter to the moments that made you grow. 
+            Share your journey of resilience, learning, and transformation.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link 
+              href="/write"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg hover:bg-primary/90 transition-colors text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+            >
+              <PenTool className="w-5 h-5" />
+              Write a Letter
+            </Link>
+            
+            <Link 
+              href="/letters"
+              className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 rounded-lg hover:bg-secondary/80 transition-colors text-lg font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+            >
+              <BookOpen className="w-5 h-5" />
+              Read Letters
+            </Link>
+          </div>
+        </div>
+
+        {/* Featured Quote */}
+        <div className="text-center mb-16">
+          <blockquote className="text-2xl serif-title text-primary/80 italic max-w-3xl mx-auto">
+            "Every failure is a stepping stone to success. 
+            Every setback is a setup for a comeback."
+          </blockquote>
+          <p className="text-sm text-muted-foreground mt-4">— Anonymous</p>
+        </div>
+
+        {/* Preview Section */}
+        <section className="mb-16">
+          <h2 className="text-3xl serif-title text-primary mb-8 text-center">
+            Recent Letters
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {recentLetters.map((letter) => (
+              <div key={letter.id} className="letter-card rounded-xl p-6 transition-all duration-300">
+                <div className="handwriting-text text-sm mb-4 line-clamp-4">
+                  "{letter.content.substring(0, 100)}..."
+                </div>
+                <div className="flex justify-between items-center text-xs text-muted-foreground">
+                  {letter.category && (
+                    <span className="bg-accent px-2 py-1 rounded-full">{letter.category}</span>
+                  )}
+                  <span>{new Date(letter.createdAt).toLocaleDateString()}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-8">
+            <Link 
+              href="/letters"
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+            >
+              <Heart className="w-4 h-4" />
+              Read more heartfelt letters
+            </Link>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/hackaithon-failing-upward/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/hackaithon-failing-upward/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/hackaithon-failing-upward/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Footer */}
+      <footer className="border-t border-border py-8 mt-16">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <p className="text-sm text-muted-foreground">
+            A safe space to honor your journey through failure and growth.
+          </p>
+        </div>
       </footer>
     </div>
   );

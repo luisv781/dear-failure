@@ -1,26 +1,131 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-cormorant);
+  --font-handwriting: var(--font-handlee);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --radius: 0.75rem;
+  /* Warm, soft pastel background */
+  --background: #fefcf8;
+  --foreground: #5a4a3a;
+  /* Cream stationery cards */
+  --card: #fdf8f0;
+  --card-foreground: #5a4a3a;
+  --popover: #fdf8f0;
+  --popover-foreground: #5a4a3a;
+  /* Soft sage green primary */
+  --primary: #8b9a8b;
+  --primary-foreground: #fefcf8;
+  /* Blush pink secondary */
+  --secondary: #f4e6e6;
+  --secondary-foreground: #5a4a3a;
+  --muted: #f0f0f0;
+  --muted-foreground: #8b8b8b;
+  /* Soft blue accent */
+  --accent: #e6f0f4;
+  --accent-foreground: #5a4a3a;
+  --destructive: #d4a5a5;
+  --border: #e8ddd4;
+  --input: #f5f1eb;
+  --ring: #8b9a8b;
+  --chart-1: #d4a5a5;
+  --chart-2: #8b9a8b;
+  --chart-3: #a5b4d4;
+  --chart-4: #d4c4a5;
+  --chart-5: #c4a5d4;
+  --sidebar: #fdf8f0;
+  --sidebar-foreground: #5a4a3a;
+  --sidebar-primary: #8b9a8b;
+  --sidebar-primary-foreground: #fefcf8;
+  --sidebar-accent: #f4e6e6;
+  --sidebar-accent-foreground: #5a4a3a;
+  --sidebar-border: #e8ddd4;
+  --sidebar-ring: #8b9a8b;
+}
+
+/* Stationery paper texture effect */
+.stationery-paper {
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(0,0,0,0.05) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Letter card styling */
+.letter-card {
+  background: linear-gradient(135deg, #fdf8f0 0%, #f9f3e8 100%);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(232, 221, 212, 0.5);
+}
+
+.letter-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Handwriting effect for letter content */
+.handwriting-text {
+  font-family: var(--font-handwriting);
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* Serif styling for titles */
+.serif-title {
+  font-family: var(--font-serif);
+  font-weight: 500;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    @apply bg-background text-foreground;
+  }
 }
